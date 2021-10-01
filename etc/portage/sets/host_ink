@@ -1,0 +1,15 @@
+@essentials
+@tools
+@modern-tools
+@mirantis
+@vpn
+@wifi
+
+# bootloader
+#sys-boot/grub
+sys-boot/refind
+# kernel
+sys-kernel/gentoo-sources
+# drivers
+sys-kernel/linux-firmware
+

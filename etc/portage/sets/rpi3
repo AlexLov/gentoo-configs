@@ -1,0 +1,6 @@
+@essentials
+sys-apps/rng-tools
+media-libs/raspberrypi-userland
+sys-boot/raspberrypi-firmware
+sys-firmware/raspberrypi-wifi-ucode
+sys-kernel/raspberrypi-sources

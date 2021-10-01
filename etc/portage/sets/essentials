@@ -1,0 +1,43 @@
+# kernel-essentials
+app-arch/xz-utils
+sys-kernel/genkernel
+
+# system-essentials
+app-admin/sudo
+app-admin/rsyslog
+app-admin/logrotate
+sys-process/cronie
+sys-fs/lvm2
+dev-libs/openssl
+
+# net-essentials
+net-misc/chrony
+net-misc/dhcpcd
+net-misc/netifrc
+net-firewall/nftables
+sys-apps/netplug
+sys-apps/iproute2
+
+# user-essentials
+app-editors/vim
+app-misc/tmux
+app-shells/zsh
+sys-process/htop
+dev-vcs/git
+# config (dotfile) manager
+app-admin/chezmoi # @alexlov
+
+# gentoo-essentials
+app-eselect/eselect-repository
+app-portage/eix
+app-portage/gentoolkit
+
+# filesystems
+sys-fs/e2fsprogs
+sys-fs/dosfstools
+
+# python
+dev-python/pip
+dev-python/virtualenv
+dev-python/tox
+

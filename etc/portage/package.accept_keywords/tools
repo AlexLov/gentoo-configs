@@ -1,0 +1,8 @@
+# boot manager
+sys-boot/refind
+
+# requirements for neovim 0.5
+dev-libs/tree-sitter
+
+# Moonlander keyboard software loader
+dev-embedded/wally-cli-bin

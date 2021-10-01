@@ -1,0 +1,12 @@
+app-misc/colordiff # colorful diff
+app-misc/jq # cli to work with json
+app-misc/yq	# cli to work with yaml
+app-editors/neovim # loved and modern editor
+
+# modern and colorful replacements for usual apps
+sys-apps/bat # cat
+sys-apps/lsd # ls
+sys-apps/procs # ps
+app-shells/starship # prompt @guru
+app-shells/zoxide # cd @guru
+

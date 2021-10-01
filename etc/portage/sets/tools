@@ -1,0 +1,37 @@
+# system tools
+app-admin/sysstat
+dev-python/psutil
+sys-apps/pciutils
+sys-apps/usbutils
+sys-process/at
+sys-process/lsof
+sys-devel/bc
+
+# network tools
+net-analyzer/iptraf-ng
+net-analyzer/mtr
+net-analyzer/openbsd-netcat
+net-analyzer/nmap
+net-analyzer/tcpdump
+net-analyzer/wireshark
+net-dns/bind-tools
+net-firewall/nftables
+net-misc/iperf
+net-misc/mosh
+net-misc/netkit-telnetd
+net-misc/whois
+net-misc/openssh
+
+## Gentoo portage
+app-portage/elogv
+app-portage/genlop
+
+# Gentoo dev
+app-portage/portage-utils
+app-portage/repoman
+#app-vim/gentoo-syntax
+dev-util/pkgcheck
+#dev-util/ccache
+
+# Container-related tools
+app-emulation/docker

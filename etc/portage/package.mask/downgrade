@@ -1,0 +1,3 @@
+# Newer versions break Intel AX210 wireless card, see details in https://bugs.gentoo.org/777324
+# Need to retest it time to time
+>=sys-kernel/linux-firmware-20210315
