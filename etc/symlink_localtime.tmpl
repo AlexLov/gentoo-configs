@@ -1,0 +1,7 @@
+{{- with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") -}}
+	{{- if (eq $hostname "ink") -}}
+../usr/share/zoneinfo/Europe/Moscow
+	{{- else }}
+../usr/share/zoneinfo/UTC
+	{{- end }}
+{{- end }}
