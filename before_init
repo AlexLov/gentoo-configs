@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Absence of symlink /usr/src/linux means the system was not initialized
+if ! [ -L /usr/src/linux ] ; then
+	chroot $PWD emerge --sync
+	chroot $PWD emerge -1 dev-vcs/git sys-kernel/gentoo-sources app-arch/xz-utils
+	chroot $PWD eselect kernel set 1
+fi
