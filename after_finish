@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# gentoo repo should be git-based but by default it's rsync-based
-# so need to fix it and sync other repos as well
-if ! [ -d /var/db/repos/gentoo/.git ]; then
-	rm -fr /var/db/repos/gentoo
-	emerge --sync
-fi
