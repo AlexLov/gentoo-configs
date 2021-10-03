@@ -1,0 +1,12 @@
+dns_domain_lo="local"
+
+# Ethernet
+config_eth0="dhcp"
+
+{{ with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") }}
+	{{- if (eq $hostname "ink") -}}
+# Wifi
+modules="wpa_supplicant"
+config_wlan0="dhcp"
+	{{- end -}}
+{{- end }}

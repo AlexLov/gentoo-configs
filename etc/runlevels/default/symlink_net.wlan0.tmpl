@@ -1,0 +1,5 @@
+{{- with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") -}}
+	{{- if (eq $hostname "ink") -}}
+/etc/init.d/net.wlan0
+	{{- end }}
+{{- end }}

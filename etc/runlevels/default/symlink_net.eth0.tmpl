@@ -1,0 +1,6 @@
+{{- with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") -}}
+	{{- if (eq $hostname "ink") -}}
+	{{- else }}
+/etc/init.d/net.eth0
+	{{- end }}
+{{- end }}
