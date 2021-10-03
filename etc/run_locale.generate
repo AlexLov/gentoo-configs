@@ -1,0 +1,11 @@
+#!/bin/bash
+
+CHROOT_CMD=''
+
+# if PWD is not /etc set chroot cmd
+[ "$PWD" != '/etc' ] && CHROOT_CMD="chroot $(dirname $PWD)"
+
+## Check that required locale is in place and exit if it's
+${CHROOT_CMD} locale -a | grep -q ru_RU && exit 0
+# generate locale(s)
+${CHROOT_CMD} locale-gen
