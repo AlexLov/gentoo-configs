@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# if PWD is not /etc run local-gen in chroot of upper dir
+if [ "$PWD" != '/etc' ]; then
+	chroot $(dirname $PWD) locale-gen
+else
+	locale-gen
+fi
