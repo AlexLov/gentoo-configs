@@ -28,8 +28,8 @@
 #LABEL=swap		none		swap		sw		0 0
 #/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
 
-{{- with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") -}}
+{{ with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") }}
 	{{- if (eq $hostname "ink") -}}
 /dev/nvme0n1p5		/		ext4		noatime		0 1
-	{{- end }}
+	{{- end -}}
 {{- end }}
