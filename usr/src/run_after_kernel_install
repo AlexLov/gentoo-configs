@@ -1,0 +1,20 @@
+#!/bin/bash
+
+CHROOT_CMD=''
+# if PWD is not /usr/src set chroot cmd
+if [ "x${PWD}" != 'x/usr/src' ]; then
+	CHROOT_CMD="chroot $(dirname $(dirname ${PWD}))"
+fi
+
+# if file /usr/src/linux/.config does not exist or it differs from /usr/src/kernel_config
+if ! diff -rupNq linux/.config kernel_config >/dev/null ; then
+	cp kernel_config linux/.config
+	${CHROOT_CMD} make -C /usr/src/linux oldconfig
+	# Compile the kernel if it's not yet compiled
+	if ! find ${PWD%%/}/usr/src/linux/ -name '*bzImage*'; then
+		${CHROOT_CMD} make -C /usr/src/linux && \
+			${CHROOT_CMD} make -C /usr/src/linux modules_install
+		${CHROOT_CMD} make -C /usr/src/linux install
+	fi
+fi
+
