@@ -6,3 +6,6 @@ dev-libs/tree-sitter
 
 # Moonlander keyboard software loader
 dev-embedded/wally-cli-bin
+
+# mirantis
+net-misc/ipmiview

@@ -1,1 +1,4 @@
 sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
+
+# mirantis
+net-misc/ipmiview supermicro
