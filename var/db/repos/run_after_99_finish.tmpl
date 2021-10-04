@@ -1,0 +1,18 @@
+#!/bin/bash
+
+CHROOT_CMD=''
+# if PWD is not /var/db/repos set chroot cmd
+if [ "x${PWD}" != 'x/var/db/repos' ]; then
+	CHROOT_CMD="chroot $(dirname $(dirname $(dirname ${PWD})))"
+fi
+
+# gentoo repo should be git-based but by default it's rsync-based
+# so need to fix it and sync other repos as well
+if ! [ -d ${PWD%%/}/gentoo/.git ]; then
+	rm -fr ${PWD%%/}/gentoo
+	${CHROOT_CMD} emerge --sync
+{{ with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") }}
+	#[ -f ${PWD%%/}/../../../etc/portage/sets/host_{{ $hostname }} ] && \
+	#	${CHROOT_CMD} emerge -DuN @host_{{ $hostname }}
+{{- end }}
+fi
