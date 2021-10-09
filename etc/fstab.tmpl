@@ -1,3 +1,4 @@
+# vim: ts=8 sts=8 sw=8
 # /etc/fstab: static file system information.
 #
 # noatime turns off atimes for increased performance (atimes normally aren't 
@@ -29,8 +30,8 @@
 #/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
 
 {{ with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") }}
-	{{- if (eq $hostname "ink") -}}
-/dev/nvme0n1p1		/boot/efi		auto		noauto		1 2
+{{- if (eq $hostname "ink") -}}
+/dev/nvme0n1p1		/boot/efi	auto		noauto,noatime	1 2
 /dev/nvme0n1p5		/		ext4		noatime		0 1
-	{{- end -}}
+{{- end -}}
 {{- end }}
