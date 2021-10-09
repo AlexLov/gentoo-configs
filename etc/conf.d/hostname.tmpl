@@ -1,5 +1,5 @@
 # Hostname fallback if /etc/hostname does not exist
-{{- with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") -}}
+{{- with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") }}
 hostname="{{ $hostname }}"
 {{- else }}
 hostname="localhost"
