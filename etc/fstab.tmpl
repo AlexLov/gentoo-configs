@@ -30,6 +30,7 @@
 
 {{ with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") }}
 	{{- if (eq $hostname "ink") -}}
+/dev/nvme0n1p1		/boot/efi		auto		noauto		1 2
 /dev/nvme0n1p5		/		ext4		noatime		0 1
 	{{- end -}}
 {{- end }}
