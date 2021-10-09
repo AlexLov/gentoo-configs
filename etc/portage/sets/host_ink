@@ -8,6 +8,7 @@
 # bootloader
 #sys-boot/grub
 sys-boot/refind
+sys-boot/efibootmgr
 # kernel
 sys-kernel/gentoo-sources
 # drivers
