@@ -11,7 +11,7 @@ if ! diff -rupNq linux/.config kernel_config >/dev/null ; then
 	cp kernel_config linux/.config
 	${CHROOT_CMD} make -C /usr/src/linux oldconfig
 	# Compile the kernel if it's not yet compiled
-	if ! find ${PWD%%/}/usr/src/linux/ -name '*bzImage*'; then
+	if ! find ./linux/ -name '*bzImage*'; then
 		${CHROOT_CMD} make -C /usr/src/linux && \
 			${CHROOT_CMD} make -C /usr/src/linux modules_install
 		${CHROOT_CMD} make -C /usr/src/linux install
