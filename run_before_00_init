@@ -8,7 +8,7 @@ fi
 
 # Absence of symlink /usr/src/linux means the system was not initialized
 if ! [ -L ${PWD%%/}/usr/src/linux ] ; then
-	${CHROOT_CMD} emerge --sync
-	${CHROOT_CMD} emerge -1 dev-vcs/git sys-kernel/gentoo-sources app-arch/xz-utils
+	${CHROOT_CMD} emerge --sync --ask n
+	${CHROOT_CMD} emerge --ask n -1 dev-vcs/git sys-kernel/gentoo-sources app-arch/xz-utils
 	${CHROOT_CMD} eselect kernel set 1
 fi
