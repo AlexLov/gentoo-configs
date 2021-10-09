@@ -12,7 +12,7 @@ if ! [ -d ${PWD%%/}/gentoo/.git ]; then
 	rm -fr ${PWD%%/}/gentoo
 	${CHROOT_CMD} emerge --sync
 {{ with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") }}
-	#[ -f ${PWD%%/}/../../../etc/portage/sets/host_{{ $hostname }} ] && \
-	#	${CHROOT_CMD} emerge -DuN @host_{{ $hostname }}
-{{- end }}
+	[ -f ${PWD%%/}/../../../etc/portage/sets/host_{{ $hostname }} ] && \
+		${CHROOT_CMD} emerge --with-bdeps --update --newuse @host_{{ $hostname }}
+{{ end }}
 fi
