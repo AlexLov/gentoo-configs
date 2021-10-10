@@ -1,0 +1,9 @@
+# Remove files that shall not be installed from this list.
+{{ with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") }}
+{{- if (eq $hostname "ink") -}}
+iwlwifi-ty-a0-gf-a0-59.ucode
+iwlwifi-ty-a0-gf-a0-62.ucode
+iwlwifi-ty-a0-gf-a0-63.ucode
+iwlwifi-ty-a0-gf-a0-66.ucode
+{{- end -}}
+{{- end }}
