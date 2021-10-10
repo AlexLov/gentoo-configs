@@ -6,15 +6,18 @@ if [ "x${PWD}" != 'x/usr/src' ]; then
 	CHROOT_CMD="chroot $(dirname $(dirname ${PWD}))"
 fi
 
-# if file /usr/src/linux/.config does not exist or it differs from /usr/src/kernel_config
-if ! diff -rupNq linux/.config kernel_config >/dev/null ; then
-	cp kernel_config linux/.config
-	${CHROOT_CMD} make -C /usr/src/linux oldconfig
-	# Compile the kernel if it's not yet compiled
-	if ! find ./linux/ -name '*bzImage*'; then
-		${CHROOT_CMD} make -C /usr/src/linux && \
-			${CHROOT_CMD} make -C /usr/src/linux modules_install
-		${CHROOT_CMD} make -C /usr/src/linux install
-	fi
+# Absence of symlink /usr/src/linux means the system was not initialized
+if ! [ -L linux ] ; then
+	${CHROOT_CMD} emerge --sync --ask n
+	${CHROOT_CMD} emerge --ask n -1 sys-kernel/gentoo-sources app-arch/xz-utils
+	${CHROOT_CMD} eselect kernel set 1
+fi
+
+# Compile the kernel if it's not yet compiled
+if ! find ./linux/ -name '*bzImage*'; then
+	MAKE="${CHROOT_CMD} make -C /usr/src/linux"
+	${MAKE} oldconfig
+	${MAKE} && ${MAKE} modules_install
+	${MAKE} install
 fi
 

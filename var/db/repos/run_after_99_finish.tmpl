@@ -9,8 +9,12 @@ fi
 # gentoo repo should be git-based but by default it's rsync-based
 # so need to fix it and sync other repos as well
 if ! [ -d ${PWD%%/}/gentoo/.git ]; then
+	if ! ${CHROOT_CMD} which git >/dev/null 2>&1; then
+		${CHROOT_CMD} emerge --sync --ask n
+		${CHROOT_CMD} emerge --ask n -1 dev-vcs/git
+	fi
 	rm -fr ${PWD%%/}/gentoo
-	${CHROOT_CMD} emerge --sync
+	${CHROOT_CMD} emerge --sync --ask n
 {{ with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") }}
 	[ -f ${PWD%%/}/../../../etc/portage/sets/host_{{ $hostname }} ] && \
 		${CHROOT_CMD} emerge --with-bdeps y --update --newuse @host_{{ $hostname }}
