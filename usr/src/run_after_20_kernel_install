@@ -13,11 +13,14 @@ if ! [ -L linux ] ; then
 	${CHROOT_CMD} eselect kernel set 1
 fi
 
-# Compile the kernel if it's not yet compiled
-if ! find ./linux/ -name '*bzImage*'; then
-	MAKE="${CHROOT_CMD} make -C /usr/src/linux"
-	${MAKE} oldconfig
-	${MAKE} && ${MAKE} modules_install
-	${MAKE} install
+# if file /usr/src/linux/.config does not exist or it differs from /usr/src/kernel_config
+if ! diff -rupNq linux/.config kernel_config >/dev/null ; then
+	cp kernel_config linux/.config
+	# Compile the kernel if it's not yet compiled
+	if ! find ./linux/ -name '*bzImage*'; then
+		MAKE="${CHROOT_CMD} make -C /usr/src/linux"
+		${MAKE} oldconfig
+		${MAKE} && ${MAKE} modules_install
+		${MAKE} install
+	fi
 fi
-
