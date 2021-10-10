@@ -10,7 +10,6 @@ fi
 # so need to fix it and sync other repos as well
 if ! [ -d ${PWD%%/}/gentoo/.git ]; then
 	if ! ${CHROOT_CMD} which git >/dev/null 2>&1; then
-		${CHROOT_CMD} emerge --sync --ask n
 		${CHROOT_CMD} emerge --ask n -1 dev-vcs/git
 	fi
 	rm -fr ${PWD%%/}/gentoo

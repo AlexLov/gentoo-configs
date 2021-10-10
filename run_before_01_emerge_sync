@@ -1,0 +1,13 @@
+#!/bin/bash
+
+CHROOT_CMD=''
+# if PWD is not /usr/src set chroot cmd
+if [ "x${PWD}" != 'x/' ]; then
+	CHROOT_CMD="chroot ${PWD}"
+fi
+
+# Sync portage repos
+if ! [ -d ${PWD%%/}/var/db/repos/gentoo ]; then
+	${CHROOT_CMD} emerge --sync --ask n
+fi
+
