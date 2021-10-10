@@ -1,6 +1,7 @@
 # system tools
 app-admin/sysstat
 dev-python/psutil
+sys-apps/lshw
 sys-apps/pciutils
 sys-apps/usbutils
 sys-process/at
