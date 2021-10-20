@@ -1,0 +1,10 @@
+gui-apps/waybar network popups wifi
+www-client/firefox l10n_ru hwaccel
+
+# requirements for firefox
+media-libs/mesa X
+x11-libs/gtk+ X
+x11-libs/cairo X
+media-libs/libglvnd X # requirements for media-libs/mesa
+media-libs/freetype harfbuzz # requirements for x11-libs/pango
+media-libs/libepoxy X # requirements for x11-libs/gtk+

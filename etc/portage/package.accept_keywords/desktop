@@ -1,6 +1,9 @@
 gui-apps/foot # terminal
+# requirements for gui-apps/foot
+dev-libs/tllist
+gui-apps/foot-terminfo
+media-libs/fcft
+
 gui-apps/waybar # status bar
-
-# requirements for waybar
+# requirements for gui-apps/waybar
 dev-libs/date
-
