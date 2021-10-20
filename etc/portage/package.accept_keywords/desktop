@@ -1,0 +1,6 @@
+gui-apps/foot # terminal
+gui-apps/waybar # status bar
+
+# requirements for waybar
+dev-libs/date
+

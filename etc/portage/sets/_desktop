@@ -1,0 +1,59 @@
+# TODO: sort it out
+# DE
+#sys-auth/elogind
+gui-wm/sway # window manager
+sys-power/acpilight # brightness manager
+
+# display manager
+gui-libs/display-manager-init
+gui-libs/greetd
+gui-apps/tuigreet
+#gui-apps/wlgreet
+## To try
+# gui-apps/tinydm # tiny display manager - wayland/x11 session starter for single user machines
+
+# Keyboard
+gui-apps/wev # Wayland event viewer
+
+# Bluetooth
+net-wireless/bluez
+
+# for xdg-open which opens files in default program
+x11-misc/xdg-utils
+
+# Clipboard
+gui-apps/clipman
+gui-apps/wl-clipboard
+gui-apps/wl-clipboard-x11
+
+# Launcher
+dev-libs/bemenu
+gui-apps/wofi
+
+# Notifications
+gui-apps/mako
+x11-libs/libnotify
+
+# Bar
+gui-apps/waybar
+
+# Screenshots
+gui-apps/grim
+gui-apps/slurp
+
+# terminal
+x11-terms/alacritty 
+x11-terms/kitty
+
+# Browser
+www-client/firefox
+www-plugins/browserpass
+# testing
+www-client/brave-bin
+www-client/firefox-bin
+
+# Apps
+app-crypt/keybase
+
+# emoji fonts
+media-fonts/noto-emoji
