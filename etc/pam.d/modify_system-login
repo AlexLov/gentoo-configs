@@ -1,4 +1,0 @@
-#!/bin/sh
-
-# if pam_elogind.so is not present in file add it
-awk '{if ($0 ~ /pam_elogind.so/) elogind_present=1; print $0} END {if (elogind_present != 1 ) print "-session	optional	pam_elogind.so"}'
