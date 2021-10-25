@@ -11,3 +11,6 @@ dev-embedded/wally-cli-bin
 
 # mirantis
 net-misc/ipmiview
+
+# requirement for app-shells/starship
+dev-libs/libgit2
