@@ -7,6 +7,6 @@ app-editors/neovim # loved and modern editor
 sys-apps/bat # cat
 sys-apps/lsd # ls
 sys-apps/procs # ps
+sys-apps/ripgrep # grep 
 app-shells/starship # prompt @guru
 app-shells/zoxide # cd @guru
-
