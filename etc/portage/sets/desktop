@@ -3,3 +3,4 @@ gui-apps/waybar # status bar
 www-client/firefox # browser
 gui-apps/foot # terminal
 gui-apps/mako # notifications
+media-fonts/noto-emoji # emoji font
