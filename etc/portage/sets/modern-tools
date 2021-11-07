@@ -5,6 +5,7 @@ app-editors/neovim # loved and modern editor
 
 # modern and colorful replacements for usual apps
 sys-apps/bat # cat
+sys-apps/fd # find
 sys-apps/lsd # ls
 sys-apps/procs # ps
 sys-apps/ripgrep # grep 
