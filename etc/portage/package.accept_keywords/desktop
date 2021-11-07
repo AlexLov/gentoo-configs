@@ -7,3 +7,7 @@ media-libs/fcft
 gui-apps/waybar # status bar
 # requirements for gui-apps/waybar
 dev-libs/date
+
+gui-apps/tuigreet # Simple login screen
+# requirements for gui-apps/tuigreet
+gui-libs/greetd
