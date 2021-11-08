@@ -1,11 +1,24 @@
+# Window manager and around
 gui-wm/sway # window manager
 gui-apps/waybar # status bar
-www-client/firefox # browser
-gui-apps/foot # terminal
-gui-apps/mako # notifications
-media-fonts/noto-emoji # emoji font
+
+# Login screen
 gui-apps/tuigreet # Simple login screen
 gui-libs/display-manager-init # to start display manager and screen login
+
+# Notifications
+gui-apps/mako # notifications
+x11-libs/libnotify # needed to support notifications from some apps, in particular firefox
+
+# Fonts
+media-fonts/noto-emoji # emoji font
+
+# General apps
+www-client/firefox # browser
+gui-apps/foot # terminal
+
+# Some convinient and helper programs
+x11-misc/xdg-utils # for xdg-open which opens files in default program
 
 # TODO replace it with something more convinient
 net-misc/keychain # add ssh keys to ssh-agent
