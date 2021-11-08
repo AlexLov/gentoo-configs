@@ -16,6 +16,7 @@ media-fonts/noto-emoji # emoji font
 # General apps
 www-client/firefox # browser
 gui-apps/foot # terminal
+gui-apps/wofi # dmenu
 
 # Some convinient and helper programs
 x11-misc/xdg-utils # for xdg-open which opens files in default program

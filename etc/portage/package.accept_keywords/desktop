@@ -11,3 +11,5 @@ dev-libs/date
 gui-apps/tuigreet # Simple login screen
 # requirements for gui-apps/tuigreet
 gui-libs/greetd
+
+gui-apps/wofi # dmenu
