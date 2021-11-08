@@ -6,3 +6,6 @@ gui-apps/mako # notifications
 media-fonts/noto-emoji # emoji font
 gui-apps/tuigreet # Simple login screen
 gui-libs/display-manager-init # to start display manager and screen login
+
+# TODO replace it with something more convinient
+net-misc/keychain # add ssh keys to ssh-agent
