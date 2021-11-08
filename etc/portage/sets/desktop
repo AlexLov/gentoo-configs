@@ -5,3 +5,4 @@ gui-apps/foot # terminal
 gui-apps/mako # notifications
 media-fonts/noto-emoji # emoji font
 gui-apps/tuigreet # Simple login screen
+gui-libs/display-manager-init # to start display manager and screen login
