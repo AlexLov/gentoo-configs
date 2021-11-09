@@ -13,3 +13,4 @@ gui-apps/tuigreet # Simple login screen
 gui-libs/greetd
 
 gui-apps/wofi # dmenu
+gui-apps/wtype # simulate keyboard

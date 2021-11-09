@@ -1,6 +1,7 @@
 # Window manager and around
 gui-wm/sway # window manager
 gui-apps/waybar # status bar
+gui-apps/wtype # simulate keyboard
 
 # Login screen
 gui-apps/tuigreet # Simple login screen
