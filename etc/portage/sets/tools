@@ -36,3 +36,4 @@ dev-util/pkgcheck
 
 # Container-related tools
 app-emulation/docker
+app-emulation/podman

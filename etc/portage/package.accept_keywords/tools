@@ -14,3 +14,10 @@ net-misc/ipmiview
 
 # requirement for app-shells/starship
 dev-libs/libgit2
+
+# Containers
+app-emulation/podman
+# requirements for app-emulation/podman
+app-emulation/conmon
+app-emulation/slirp4netns
+sys-fs/fuse-overlayfs
