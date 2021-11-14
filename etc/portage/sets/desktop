@@ -2,6 +2,9 @@
 gui-wm/sway # window manager
 gui-apps/waybar # status bar
 gui-apps/wtype # simulate keyboard
+# Clipboard
+gui-apps/wl-clipboard
+gui-apps/wl-clipboard-x11
 
 # Login screen
 gui-apps/tuigreet # Simple login screen
@@ -16,6 +19,7 @@ media-fonts/noto-emoji # emoji font
 
 # General apps
 www-client/firefox # browser
+www-client/vivaldi # chrome-based browser
 gui-apps/foot # terminal
 gui-apps/wofi # dmenu
 
@@ -24,3 +28,6 @@ x11-misc/xdg-utils # for xdg-open which opens files in default program
 
 # TODO replace it with something more convinient
 net-misc/keychain # add ssh keys to ssh-agent
+
+# Moonlander keyboard configurator
+dev-embedded/wally-cli-bin
