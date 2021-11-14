@@ -4,13 +4,17 @@ dev-libs/tllist
 gui-apps/foot-terminfo
 media-libs/fcft
 
+gui-apps/wofi # dmenu
+gui-apps/wtype # simulate keyboard
+
+gui-apps/wl-clipboard-x11
+
 gui-apps/waybar # status bar
 # requirements for gui-apps/waybar
 dev-libs/date
+dev-libs/spdlog
+dev-libs/libfmt # requirement for dev-libs/spdlog
 
 gui-apps/tuigreet # Simple login screen
 # requirements for gui-apps/tuigreet
 gui-libs/greetd
-
-gui-apps/wofi # dmenu
-gui-apps/wtype # simulate keyboard
