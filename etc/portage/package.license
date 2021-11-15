@@ -1,4 +1,5 @@
 sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
+www-client/vivaldi Vivaldi
 
 # mirantis
 net-misc/ipmiview supermicro

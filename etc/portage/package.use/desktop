@@ -8,3 +8,7 @@ x11-libs/cairo X
 media-libs/libglvnd X # requirements for media-libs/mesa
 media-libs/freetype harfbuzz # requirements for x11-libs/pango
 media-libs/libepoxy X # requirements for x11-libs/gtk+
+
+www-client/vivaldi proprietary-codecs
+# reqirements for vivaldi
+x11-libs/pango X
