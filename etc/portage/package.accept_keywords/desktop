@@ -8,6 +8,7 @@ gui-apps/wofi # dmenu
 gui-apps/wtype # simulate keyboard
 
 gui-apps/wl-clipboard-x11
+gui-apps/wev
 
 gui-apps/waybar # status bar
 # requirements for gui-apps/waybar
