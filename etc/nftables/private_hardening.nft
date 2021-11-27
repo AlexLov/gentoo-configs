@@ -1,0 +1,58 @@
+#!/sbin/nft -f
+
+# nftables hardening taken from https://blog.samuel.domains/blog/security/nftables-hardening-rules-and-good-practices
+
+table netdev filter {
+	chain ingress {
+		type filter hook ingress device eth0 priority -500;
+
+		# IP FRAGMENTS
+		ip frag-off & 0x1fff != 0 counter drop comment "IP FRAMENTS"
+
+		# IP BOGONS
+		# From <https://www.team-cymru.com/bogon-reference.html>.
+		ip saddr { \
+				0.0.0.0/8, \
+				10.0.0.0/8, \
+				100.64.0.0/10, \
+				127.0.0.0/8, \
+				169.254.0.0/16, \
+				172.16.0.0/12, \
+				192.0.0.0/24, \
+				192.0.2.0/24, \
+				192.168.0.0/16, \
+				198.18.0.0/15, \
+				198.51.100.0/24, \
+				203.0.113.0/24, \
+				224.0.0.0/3 \
+			} \
+			counter drop
+
+		# TCP XMAS
+		tcp flags & (fin|syn|rst|psh|ack|urg) == fin|syn|rst|psh|ack|urg \
+			counter drop comment "TCP XMAS"
+
+		# TCP NULL
+		tcp flags & (fin|syn|rst|psh|ack|urg) == 0x0 \
+			counter drop comment "TCP NULL"
+
+		# TCP MSS
+		tcp flags syn \
+			tcp option maxseg size 1-536 \
+			counter drop comment "TCP MSS"
+	}
+}
+table inet mangle {
+	chain prerouting {
+		type filter hook prerouting priority -500;
+
+		# CT INVALID
+		ct state invalid counter drop comment "early drop of invalid packets"
+
+		# TCP SYN (CT NEW)
+		tcp flags & (fin|syn|rst|ack) != syn \
+			ct state new \
+			counter drop comment "early drop new none-SYN packets"
+	}
+}
+
