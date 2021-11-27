@@ -44,7 +44,7 @@ table netdev filter {
 }
 table inet mangle {
 	chain prerouting {
-		type filter hook prerouting priority -500;
+		type filter hook prerouting priority -150;
 
 		# CT INVALID
 		ct state invalid counter drop comment "early drop of invalid packets"
