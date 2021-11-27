@@ -35,5 +35,5 @@ dev-util/pkgcheck
 #dev-util/ccache
 
 # Container-related tools
-app-emulation/docker
-app-emulation/podman
+app-emulation/buildah # build images
+app-emulation/podman # run cotainers/pods

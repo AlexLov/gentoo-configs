@@ -2,5 +2,4 @@ dev-python/git-review
 #app-emulation/virt-manager
 #app-emulation/virt-viewer
 #net-misc/ipmiview
-net-proxy/sshuttle
 #sys-cluster/kubectl
