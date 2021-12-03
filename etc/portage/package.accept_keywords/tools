@@ -16,6 +16,7 @@ net-misc/ipmiview
 dev-libs/libgit2
 
 # Containers
+app-emulation/crun # faster container runtime
 app-emulation/podman
 # requirements for app-emulation/podman
 app-emulation/conmon
