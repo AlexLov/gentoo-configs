@@ -16,9 +16,9 @@ net-misc/ipmiview
 dev-libs/libgit2
 
 # Containers
-app-emulation/crun # faster container runtime
-app-emulation/podman
-# requirements for app-emulation/podman
-app-emulation/conmon
-app-emulation/slirp4netns
+app-containers/crun # faster container runtime
+app-containers/podman
+# requirements for app-containers/podman
+app-containers/conmon
+app-containers/slirp4netns
 sys-fs/fuse-overlayfs

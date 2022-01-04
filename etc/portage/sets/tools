@@ -35,6 +35,6 @@ dev-util/pkgcheck
 #dev-util/ccache
 
 # Container-related tools
-app-emulation/buildah # build images
-app-emulation/crun # faster container runtime
-app-emulation/podman # run cotainers/pods
+app-containers/buildah # build images
+app-containers/crun # faster container runtime
+app-containers/podman # run cotainers/pods
