@@ -19,7 +19,7 @@ sys-apps/netplug
 sys-apps/iproute2
 
 # user-essentials
-app-editors/vim
+app-editors/neovim # loved and modern editor
 app-misc/tmux
 app-shells/zsh
 sys-process/htop

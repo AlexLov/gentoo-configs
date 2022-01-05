@@ -22,7 +22,6 @@ media-fonts/noto-emoji # emoji font
 # General apps
 www-client/firefox # browser
 www-client/vivaldi # chrome-based browser
-x11-terms/alacritty # terminal with vim mode support
 gui-apps/foot # terminal
 gui-apps/wofi # dmenu
 

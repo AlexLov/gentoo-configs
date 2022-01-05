@@ -30,7 +30,6 @@ app-portage/genlop
 # Gentoo dev
 app-portage/portage-utils
 app-portage/repoman
-#app-vim/gentoo-syntax
 dev-util/pkgcheck
 #dev-util/ccache
 

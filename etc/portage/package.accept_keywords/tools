@@ -3,6 +3,7 @@ app-admin/chezmoi
 # boot manager
 sys-boot/refind
 
+app-editors/neovim
 # requirements for neovim 0.5
 dev-libs/tree-sitter
 
