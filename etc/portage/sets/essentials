@@ -1,6 +1,5 @@
 # kernel-essentials
 app-arch/xz-utils
-sys-kernel/genkernel
 
 # system-essentials
 app-admin/sudo
