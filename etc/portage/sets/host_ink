@@ -11,7 +11,7 @@
 sys-boot/refind
 sys-boot/efibootmgr
 # kernel
-sys-kernel/gentoo-sources
+sys-kernel/gentoo-kernel
 # drivers
 sys-kernel/linux-firmware
 
