@@ -33,3 +33,6 @@ net-misc/keychain # add ssh keys to ssh-agent
 
 # Moonlander keyboard configurator
 dev-embedded/wally-cli-bin
+
+# VNC client
+net-misc/remmina
