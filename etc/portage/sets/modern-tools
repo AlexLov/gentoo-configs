@@ -7,6 +7,9 @@ sys-apps/bat # cat
 sys-apps/fd # find
 sys-apps/lsd # ls
 sys-apps/procs # ps
-sys-apps/ripgrep # grep 
+sys-apps/ripgrep # grep
 app-shells/starship # prompt @guru
 app-shells/zoxide # cd @guru
+
+# Add lisp-like syntax to lua
+dev-lang/fennel
