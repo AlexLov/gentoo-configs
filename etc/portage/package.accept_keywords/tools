@@ -4,8 +4,10 @@ app-admin/chezmoi
 sys-boot/refind
 
 app-editors/neovim
-# requirements for neovim 0.5
+# requirements for neovim 0.6+
 dev-libs/tree-sitter
+dev-lua/luv
+dev-libs/libvterm
 
 # Moonlander keyboard software loader
 dev-embedded/wally-cli-bin
