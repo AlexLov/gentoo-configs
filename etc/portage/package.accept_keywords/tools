@@ -25,3 +25,4 @@ app-containers/podman
 app-containers/conmon
 app-containers/slirp4netns
 sys-fs/fuse-overlayfs
+app-containers/catatonit
