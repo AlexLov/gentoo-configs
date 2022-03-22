@@ -1,0 +1,5 @@
+{{- with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") -}}
+	{{- if (eq $hostname "ink") -}}
+net.lo
+	{{- end }}
+{{- end }}

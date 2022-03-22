@@ -8,5 +8,13 @@ config_eth0="dhcp"
 # Wifi
 modules="wpa_supplicant"
 config_wlan0="dhcp"
+
+# Wireguard
+wireguard_wg0="/etc/wireguard/wg0-client.conf"
+config_wg0="10.192.122.3/24"
+routes_wg0="default dev wg0 table 61049"
+rules_wg0="
+not fwmark 61049 table 61049
+table main suppress_prefixlength 0
 	{{- end -}}
 {{- end }}
