@@ -8,8 +8,6 @@ sys-apps/fd # find
 app-misc/lf	# console vim like file browser
 sys-apps/lsd # ls
 sys-apps/procs # ps
-sys-apps/ripgrep # grep
-app-shells/starship # prompt @guru
 app-shells/zoxide # cd @guru
 
 # Add lisp-like syntax to lua
