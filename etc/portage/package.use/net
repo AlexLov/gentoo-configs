@@ -1,2 +1,3 @@
 net-analyzer/wireshark tfshark -X -qt5
 net-wireless/hostapd internal-tls
+net-wireless/wpa_supplicant tkip
