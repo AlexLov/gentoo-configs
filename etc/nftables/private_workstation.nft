@@ -2,6 +2,13 @@
 
 # Simple worstation taken from https://wiki.gentoo.org/wiki/Nftables/Examples#Typical_workstation_.28combined_IPv4_and_IPv6.29
 table inet filter {
+        set tcp_accepted {                                                                                                                                                    
+                type inet_service                                                                                                                                             
+                flags interval                                                         
+                elements = {
+                        22, # ssh
+                }                                                                      
+        }
 	chain input {
 		# Drop everything that not explicitly allowed
 		type filter hook input priority 0; policy drop;
@@ -17,6 +24,9 @@ table inet filter {
 		# Allow ICMP
 		ip protocol icmp counter accept comment "accept all ICMP types"
 		ip6 nexthdr icmpv6 counter accept comment "accept all ICMP types"
+
+		# Open some tcp ports
+		iifname "wg0" tcp dport @tcp_accepted ct state new accept comment "Allow certain TCP ports on wg0"
 
 		counter comment "count dropped packets"
 	}
