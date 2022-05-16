@@ -1,0 +1,7 @@
+sys-cluster/kubectl
+app-admin/terraform
+sys-cluster/k9scli
+app-admin/awscli
+
+# requirements for awscli
+dev-python/botocore
