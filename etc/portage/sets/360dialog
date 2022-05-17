@@ -2,6 +2,7 @@ sys-cluster/kubectl
 app-admin/terraform
 sys-cluster/k9scli
 app-admin/awscli
+dev-vcs/git-crypt
 
 # requirements for awscli
 dev-python/botocore
