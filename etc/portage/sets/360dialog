@@ -3,6 +3,8 @@ app-admin/terraform
 sys-cluster/k9scli
 app-admin/awscli
 dev-vcs/git-crypt
+app-admin/vault
+app-admin/op-cli-bin
 
 # requirements for awscli
 dev-python/botocore
