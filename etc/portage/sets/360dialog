@@ -6,6 +6,7 @@ app-admin/awscli
 dev-vcs/git-crypt
 app-admin/vault
 app-admin/op-cli-bin
+app-admin/helm
 
 # requirements for awscli
 dev-python/botocore
