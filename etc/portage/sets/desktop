@@ -24,6 +24,7 @@ www-client/firefox # browser
 www-client/vivaldi # chrome-based browser
 gui-apps/foot # terminal
 gui-apps/wofi # dmenu
+www-client/links # text based browser
 
 # Some convinient and helper programs
 x11-misc/xdg-utils # for xdg-open which opens files in default program
