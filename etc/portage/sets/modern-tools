@@ -16,3 +16,6 @@ dev-lang/fennel
 # Shell
 app-shells/fzf
 app-shells/fzf-tab
+app-shells/zsh-autosuggestions
+app-shells/zsh-syntax-highlighting
+app-shells/zsh-history-substring-search
