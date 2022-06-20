@@ -8,6 +8,10 @@ gui-apps/wev # event viewer (mostly to get pressed keys)
 gui-apps/wl-clipboard
 gui-apps/wl-clipboard-x11
 
+# Screenshots
+gui-apps/grim
+gui-apps/slurp
+
 # Login screen
 gui-apps/tuigreet # Simple login screen
 gui-libs/display-manager-init # to start display manager and screen login
