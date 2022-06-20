@@ -33,5 +33,6 @@
 {{- if (eq $hostname "ink") -}}
 /dev/nvme0n1p1		/boot/efi	auto		noauto,noatime	1 2
 /dev/nvme0n1p5		/		ext4		noatime		0 1
+/dev/nvme0n1p7		/home		ext4		noatime		0 0
 {{- end -}}
 {{- end }}
