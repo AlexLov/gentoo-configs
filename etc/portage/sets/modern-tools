@@ -12,3 +12,7 @@ app-shells/zoxide # cd @guru
 
 # Add lisp-like syntax to lua
 dev-lang/fennel
+
+# Shell
+app-shells/fzf
+app-shells/fzf-tab
