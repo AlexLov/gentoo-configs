@@ -1,5 +1,5 @@
 {{- with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") -}}
-	{{- if (eq $hostname "ink") -}}
+	{{- if (eq $hostname "none") -}}
 /etc/init.d/net.wg0
 	{{- end }}
 {{- end }}
