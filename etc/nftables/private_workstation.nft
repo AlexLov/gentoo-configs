@@ -27,6 +27,8 @@ table inet filter {
 
 		# Open some tcp ports
 		iifname "wg0" tcp dport @tcp_accepted ct state new accept comment "Allow certain TCP ports on wg0"
+		iifname "tailscale0" tcp dport @tcp_accepted ct state new accept comment "Allow certain TCP ports on tailscale0"
+		iifname "wlan0" tcp dport @tcp_accepted ct state new accept comment "Allow certain TCP ports on wlan0"
 
 		counter comment "count dropped packets"
 	}
