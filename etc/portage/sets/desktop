@@ -3,6 +3,7 @@ gui-wm/sway # window manager
 gui-apps/waybar # status bar
 gui-apps/wtype # simulate keyboard
 sys-power/acpilight # brightness manager
+sys-power/acpi # Battery status and something else
 gui-apps/wev # event viewer (mostly to get pressed keys)
 # Clipboard
 gui-apps/wl-clipboard
@@ -41,3 +42,6 @@ dev-embedded/wally-cli-bin
 
 # VNC client
 net-misc/remmina
+
+# CLI tools
+sys-apps/pv  # pipe viewer - progress bar for terminal
