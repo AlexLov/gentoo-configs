@@ -7,6 +7,7 @@ dev-vcs/git-crypt
 app-admin/vault
 app-admin/op-cli-bin
 app-admin/helm
+dev-lang/jsonnet
 
 # requirements for awscli
 dev-python/botocore
