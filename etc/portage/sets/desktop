@@ -45,3 +45,4 @@ net-misc/remmina
 
 # CLI tools
 sys-apps/pv  # pipe viewer - progress bar for terminal
+sys-process/btop # nice alternative to htop
