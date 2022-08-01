@@ -1,5 +1,5 @@
 # sdl flag for ffplay
-media-video/ffmpeg alsa fontconfig libass libcaca sdl svg truetype webp x263 x265
+media-video/ffmpeg alsa fontconfig libass libcaca sdl svg truetype webp x264 x265
 media-video/mpv -xv
 # requerments for ffmpeg's sdl
 media-libs/libsdl2 gles2
