@@ -22,6 +22,10 @@ gui-apps/mako # notifications
 x11-libs/libnotify # needed to support notifications from some apps, in particular firefox
 
 # Fonts
+media-fonts/dejavu
+media-fonts/freefont
+media-fonts/liberation-fonts
+media-fonts/noto
 media-fonts/noto-emoji # emoji font
 
 # General apps
