@@ -9,6 +9,8 @@
 @wifi
 @video
 
+@shell-dev
+
 # bootloader
 #sys-boot/grub
 sys-boot/refind

@@ -1,0 +1,6 @@
+# Syntax check
+dev-util/shellcheck
+
+# Unit tests for bash
+dev-util/bats
+dev-util/bats-assert
