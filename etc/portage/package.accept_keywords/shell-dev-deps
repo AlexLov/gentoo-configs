@@ -1,0 +1,6 @@
+# Requirements for dev-util/shellcheck
+dev-lang/ghc
+dev-haskell/*
+
+# Requirements for dev-lang/ghc
+app-admin/haskell-updater
