@@ -38,3 +38,6 @@ dev-util/pkgcheck
 app-containers/buildah # build images
 app-containers/crun # faster container runtime
 app-containers/podman # run cotainers/pods
+
+# Monitoring
+net-analyzer/netdata

@@ -1,3 +1,4 @@
 # remove dependencies on net-firewall/iptables
 net-vpn/wireguard-tools -wg-quick
 sys-apps/iproute2 -iptables
+net-analyzer/netdata nfacct prometheus

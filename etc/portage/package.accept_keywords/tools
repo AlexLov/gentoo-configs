@@ -26,3 +26,6 @@ app-containers/conmon
 app-containers/slirp4netns
 sys-fs/fuse-overlayfs
 app-containers/catatonit
+
+# Monitoring
+net-analyzer/netdata
