@@ -11,7 +11,6 @@ app-misc/lf	# console vim like file browser
 sys-apps/lsd # ls
 sys-apps/procs # ps
 app-shells/zoxide # cd @guru
-sys-process/gotop # top @guru
 
 # Add lisp-like syntax to lua
 dev-lang/fennel
