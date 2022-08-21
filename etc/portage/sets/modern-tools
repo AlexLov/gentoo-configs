@@ -2,6 +2,8 @@ app-misc/colordiff # colorful diff
 app-misc/jq # cli to work with json
 app-misc/yq	# cli to work with yaml
 
+dev-util/git-delta # better diff for git, grep and more
+
 # modern and colorful replacements for usual apps
 sys-apps/bat # cat
 sys-apps/fd # find
