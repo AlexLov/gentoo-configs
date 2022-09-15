@@ -23,6 +23,7 @@ net-misc/mosh
 net-misc/netkit-telnetd
 net-misc/whois
 net-misc/openssh
+net-misc/ipcalc
 
 ## Gentoo portage
 app-portage/elogv
