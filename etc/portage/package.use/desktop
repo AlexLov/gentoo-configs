@@ -6,10 +6,16 @@ net-misc/remmina vnc
 media-libs/mesa X
 x11-libs/gtk+ X
 x11-libs/cairo X
+x11-libs/libxkbcommon X
 media-libs/libglvnd X # requirements for media-libs/mesa
 media-libs/freetype harfbuzz # requirements for x11-libs/pango
 media-libs/libepoxy X # requirements for x11-libs/gtk+
+dev-cpp/gtkmm X # requirements for x11-libs/gtk+
+dev-cpp/cairomm X # requirements for x11-libs/cairo
 
 www-client/vivaldi proprietary-codecs
 # reqirements for vivaldi
 x11-libs/pango X
+
+# requirements for remmina
+dev-libs/libdbusmenu gtk3

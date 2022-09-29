@@ -31,7 +31,6 @@ app-portage/genlop
 
 # Gentoo dev
 app-portage/portage-utils
-app-portage/repoman
 dev-util/pkgcheck
 #dev-util/ccache
 
