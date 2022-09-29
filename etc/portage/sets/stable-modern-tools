@@ -1,3 +1,4 @@
 sys-apps/ripgrep # grep
 app-shells/starship # prompt
 sys-process/bottom # top
+sys-fs/dfc # df
