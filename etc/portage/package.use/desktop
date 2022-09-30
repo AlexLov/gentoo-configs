@@ -1,6 +1,8 @@
 gui-apps/waybar network popups wifi
 www-client/firefox l10n_ru hwaccel
 net-misc/remmina vnc
+media-gfx/imv gif jpeg png svg tiff
+media-libs/freeimage jpeg png tiff
 
 # requirements for firefox
 media-libs/mesa X
