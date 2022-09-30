@@ -12,6 +12,8 @@ gui-apps/wl-clipboard-x11
 # Screenshots
 gui-apps/grim
 gui-apps/slurp
+media-gfx/imv  # minimal image viewer
+media-gfx/chafa # show images in terminal
 
 # Login screen
 gui-apps/tuigreet # Simple login screen
