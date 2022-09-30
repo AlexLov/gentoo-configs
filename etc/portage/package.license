@@ -1,6 +1,8 @@
 sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
 www-client/vivaldi Vivaldi
 
+app-containers/aardvark-dns BSL-1.1
+
 # mirantis
 net-misc/ipmiview supermicro
 

@@ -1,0 +1,13 @@
+# Containers
+app-containers/crun # faster container runtime
+app-containers/podman
+app-containers/netavark # network stack
+
+# requirements for app-containers/podman
+app-containers/conmon
+app-containers/slirp4netns
+sys-fs/fuse-overlayfs
+app-containers/catatonit
+
+# requerements for app-containers/netavark
+app-containers/aardvark-dns

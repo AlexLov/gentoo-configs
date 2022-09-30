@@ -18,14 +18,5 @@ net-misc/ipmiview
 # requirement for app-shells/starship
 dev-libs/libgit2
 
-# Containers
-app-containers/crun # faster container runtime
-app-containers/podman
-# requirements for app-containers/podman
-app-containers/conmon
-app-containers/slirp4netns
-sys-fs/fuse-overlayfs
-app-containers/catatonit
-
 # Monitoring
 net-analyzer/netdata
