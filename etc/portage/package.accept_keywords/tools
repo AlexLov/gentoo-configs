@@ -9,9 +9,6 @@ dev-libs/tree-sitter
 dev-lua/luv
 dev-libs/libvterm
 
-# Moonlander keyboard software loader
-dev-embedded/wally-cli-bin
-
 # mirantis
 net-misc/ipmiview
 

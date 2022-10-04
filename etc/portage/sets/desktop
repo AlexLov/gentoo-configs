@@ -45,7 +45,7 @@ x11-misc/xdg-utils # for xdg-open which opens files in default program
 net-misc/keychain # add ssh keys to ssh-agent
 
 # Moonlander keyboard configurator
-dev-embedded/wally-cli-bin
+app-misc/wally-cli
 
 # VNC client
 net-misc/remmina

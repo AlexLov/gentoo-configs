@@ -24,3 +24,7 @@ dev-libs/libfmt # requirement for dev-libs/spdlog
 gui-apps/tuigreet # Simple login screen
 # requirements for gui-apps/tuigreet
 gui-libs/greetd
+
+# Moonlander keyboard software loader
+app-misc/wally-cli
+
