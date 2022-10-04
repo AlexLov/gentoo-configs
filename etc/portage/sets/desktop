@@ -33,6 +33,7 @@ media-fonts/noto-emoji # emoji font
 # General apps
 www-client/firefox # browser
 www-client/vivaldi # chrome-based browser
+www-client/browsh # terminal-based browser with simple graphics support
 gui-apps/foot # terminal
 gui-apps/wofi # dmenu
 www-client/links # text based browser

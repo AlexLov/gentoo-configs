@@ -1,3 +1,5 @@
+www-client/browsh # terminal-based browser with simple graphics support
+
 gui-apps/foot # terminal
 # requirements for gui-apps/foot
 dev-libs/tllist
