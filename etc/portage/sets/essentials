@@ -6,6 +6,7 @@ app-admin/sudo
 app-admin/rsyslog
 app-admin/logrotate
 sys-process/cronie
+sys-process/incron
 sys-fs/lvm2
 dev-libs/openssl
 
