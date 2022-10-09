@@ -29,6 +29,7 @@ app-admin/chezmoi # @alexlov
 
 # gentoo-essentials
 app-eselect/eselect-repository
+app-eselect/eselect-timezone
 app-portage/eix
 app-portage/gentoolkit
 
