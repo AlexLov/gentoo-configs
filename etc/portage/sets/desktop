@@ -56,3 +56,4 @@ net-misc/remmina
 # CLI tools
 sys-apps/pv  # pipe viewer - progress bar for terminal
 sys-apps/sampler # fancy graphs in CLI
+app-misc/tmuxp # describe tmux session (windows/panes/layouts/commands/etc) in yaml
