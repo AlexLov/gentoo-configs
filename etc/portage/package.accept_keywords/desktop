@@ -8,6 +8,8 @@ media-libs/fcft
 
 # Use freshest tmux
 app-misc/tmux
+app-misc/tmuxp
+dev-python/libtmux
 
 gui-apps/wofi # dmenu
 gui-apps/wtype # simulate keyboard
