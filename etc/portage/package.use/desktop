@@ -21,3 +21,6 @@ x11-libs/pango X
 
 # requirements for remmina
 dev-libs/libdbusmenu gtk3
+
+# requirements for gnome-base/gnome-keyring
+app-crypt/gcr gtk3
