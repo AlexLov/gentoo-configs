@@ -36,3 +36,6 @@ dev-util/pkgcheck
 
 # Monitoring
 net-analyzer/netdata
+
+# Filesystems
+sys-block/parted
