@@ -3,7 +3,7 @@ gui-wm/sway # window manager
 gui-apps/waybar # status bar
 gui-apps/wtype # simulate keyboard
 sys-power/acpilight # brightness manager
-sys-power/acpi # Battery status and something else
+sys-power/upower # Battery status and something else
 gui-apps/wev # event viewer (mostly to get pressed keys)
 # Clipboard
 gui-apps/wl-clipboard
