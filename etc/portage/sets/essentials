@@ -36,6 +36,7 @@ app-portage/gentoolkit
 # filesystems
 sys-fs/e2fsprogs
 sys-fs/dosfstools
+sys-fs/exfatprogs
 
 # python
 dev-python/pip
