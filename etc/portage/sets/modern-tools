@@ -25,3 +25,5 @@ app-shells/zsh-syntax-highlighting
 app-shells/zsh-history-substring-search
 
 app-misc/glow # Render markdown in CLI
+
+app-shells/mcfly # ctrl-r in shell with more relevant results
