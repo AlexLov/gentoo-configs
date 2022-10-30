@@ -32,6 +32,7 @@ app-portage/genlop
 # Gentoo dev
 app-portage/portage-utils
 dev-util/pkgcheck
+dev-util/cargo-ebuild # to easy make ebuild files for rust apps
 #dev-util/ccache
 
 # Monitoring

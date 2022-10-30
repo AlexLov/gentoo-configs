@@ -17,3 +17,6 @@ dev-libs/libgit2
 
 # Monitoring
 net-analyzer/netdata
+
+# Gentoo dev
+dev-util/cargo-ebuild
