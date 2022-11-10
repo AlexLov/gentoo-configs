@@ -11,9 +11,16 @@ config_wlan0="dhcp"
 
 # Wireguard
 wireguard_wg0="/etc/wireguard/wg0-client.conf"
-config_wg0="10.192.122.3/24"
-routes_wg0="default dev wg0 table 61049"
+config_wg0="192.168.122.10/24 fd67:21c9:404d::10/64"
+routes_wg0="
+-4 default dev wg0 table 61049
+-6 default dev wg0 table 61049
+"
 rules_wg0="
+not fwmark 61049 table 61049
+table main suppress_prefixlength 0
+"
+rules6_wg0="
 not fwmark 61049 table 61049
 table main suppress_prefixlength 0
 "
