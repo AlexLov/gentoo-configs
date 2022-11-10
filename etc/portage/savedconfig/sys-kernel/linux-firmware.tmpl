@@ -2,6 +2,7 @@
 {{ with $hostname := default .chezmoi.hostname (env "CHEZMOI_HOSTNAME") }}
 {{- if (eq $hostname "ink") -}}
 i915/tgl_dmc_ver2_08.bin
+i915/tgl_dmc_ver2_12.bin
 intel/ibt-0041-0041.sfi
 intel/ibt-0041-0041.ddc
 iwlwifi-ty-a0-gf-a0-59.ucode
@@ -10,6 +11,7 @@ iwlwifi-ty-a0-gf-a0-63.ucode
 iwlwifi-ty-a0-gf-a0-66.ucode
 iwlwifi-ty-a0-gf-a0-67.ucode
 iwlwifi-ty-a0-gf-a0.pnvm
+rtl_nic/rtl8153a-3.fw
 regulatory.db
 {{- end -}}
 {{- end }}
