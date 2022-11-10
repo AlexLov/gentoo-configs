@@ -20,6 +20,8 @@ sys-boot/efibootmgr
 sys-kernel/gentoo-kernel
 # drivers
 sys-kernel/linux-firmware
+# audio drivers
+sys-firmware/sof-firmware
 
 # experiments with building qcow2 images
 app-emulation/qemu
