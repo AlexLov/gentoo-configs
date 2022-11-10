@@ -41,7 +41,7 @@ PORTAGE_ELOG_SYSTEM="echo:log,warn.error,info save:log,warn,error,info syslog:er
 # Default cli args
 EMERGE_DEFAULT_OPTS="--ask --ask-enter-invalid --tree --verbose --usepkg \
                      --with-bdeps=y --binpkg-changed-deps=y --binpkg-respect-use=y" 
-EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --usepkg-exclude 'sys-kernel/gentoo-sources sys-kernel/raspberrypi-source virtual/*'" 
-EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --buildpkg-exclude 'sys-kernel/gentoo-sources sys-kernel/raspberrypi-source virtual/*'" 
+EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --usepkg-exclude 'sys-kernel/gentoo-sources sys-kernel/linux-firmware sys-kernel/raspberrypi-source virtual/*'"
+EMERGE_DEFAULT_OPTS="${EMERGE_DEFAULT_OPTS} --buildpkg-exclude 'sys-kernel/gentoo-sources sys-kernel/linux-firmware sys-kernel/raspberrypi-source virtual/*'"
 
 #GRUB_PLATFORMS="efi-64 pc"
