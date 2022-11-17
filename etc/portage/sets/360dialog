@@ -8,6 +8,7 @@ app-admin/vault
 app-admin/op-cli-bin
 app-admin/helm
 dev-lang/jsonnet
+dev-vcs/pre-commit
 
 # requirements for awscli
 dev-python/botocore
