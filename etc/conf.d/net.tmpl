@@ -11,7 +11,11 @@ config_wlan0="dhcp"
 
 # Wireguard
 wireguard_wg0="/etc/wireguard/wg0-client.conf"
-config_wg0="192.168.122.10/24 fd67:21c9:404d::10/64"
+# Digital Ocean
+#config_wg0="192.168.122.10/24 fd67:21c9:404d::10/64"
+# Kamatera
+config_wg0="192.168.123.10/24"
+dns_servers_wg0="192.168.123.1"
 routes_wg0="
 -4 default dev wg0 table 61049
 -6 default dev wg0 table 61049
