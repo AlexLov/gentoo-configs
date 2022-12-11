@@ -1,0 +1,11 @@
+sys-apps/flatpak X
+sys-apps/bubblewrap -suid
+
+# Audio
+media-video/pipewire pipewire-alsa extra echo-cancel flatpak sound-server
+media-sound/pulseaudio -daemon
+*/* pulseaudio screencast
+
+# Add X support to sway as Steam only works on X for now
+gui-wm/sway X
+gui-libs/wlroots X

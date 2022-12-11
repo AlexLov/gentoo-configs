@@ -1,0 +1,8 @@
+sys-apps/flatpak
+# Connect flatpaco apps to wayland
+gui-libs/xdg-desktop-portal-wlr
+
+# Controller support
+games-util/game-device-udev-rules
+
+net-im/discord-bin

@@ -3,6 +3,8 @@ www-client/vivaldi Vivaldi
 
 app-containers/aardvark-dns BSL-1.1
 
+net-im/discord-bin all-rights-reserved
+
 # mirantis
 net-misc/ipmiview supermicro
 
