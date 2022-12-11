@@ -7,7 +7,7 @@ dev-util/git-delta # better diff for git, grep and more
 # modern and colorful replacements for usual apps
 sys-apps/bat # cat
 sys-apps/fd # find
-app-misc/lf	# console vim like file browser
+app-misc/lf-sixel	# @alexlov console vim like file browser
 sys-apps/lsd # ls
 sys-apps/procs # ps
 app-shells/zoxide # cd @guru
