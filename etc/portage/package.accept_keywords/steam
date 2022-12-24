@@ -1,2 +1,2 @@
-sys-apps/flatpak
+*/*::steam-overlay
 games-util/game-device-udev-rules

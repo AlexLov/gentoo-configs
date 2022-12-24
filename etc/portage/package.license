@@ -10,3 +10,6 @@ net-misc/ipmiview supermicro
 
 # 360dialog
 app-admin/op-cli-bin all-rights-reserved
+
+# Steam
+*/*::steam-overlay ValveSteamLicense
